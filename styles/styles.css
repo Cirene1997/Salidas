@@ -17,6 +17,7 @@
   --ligthRed: #f3b2b2;
   
 }
+
 .errorDato{
   color: var(--red);
   font-size: 30px;
@@ -177,7 +178,36 @@ h3{
 }
 
 
+/* COMIENZO MEDIA QUERY */
+
 @media screen and (max-width: 980px) {
+
+
+.errorDatoMedia{
+  color: var(--red);
+  font-size: 30px;
+  left: 0px;
+  margin-left: 10px;
+  width: 45px;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+.okDatoMedia{
+  color: var(--white);
+  left: 0px;
+  font-size: 30px;
+  margin-left: 10px;
+  width: 45px;
+  border: 2px solid var(--ligthblueFort);
+  border-radius: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+
+
+
   .conteiner2 .valores2 > h2 {
     font-size: 15px;
   }
@@ -309,4 +339,3 @@ h3{
     font-size: 25px;
   }
 } ;
-
