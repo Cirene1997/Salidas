@@ -172,7 +172,7 @@ function semanasFechas() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   const fechaConParametros = new Date()
   const numberOfMlSeconds = fechaConParametros.getTime();
-   const addMlSeconds = 60 * 1600000;
+  const addMlSeconds = 60 * 1600000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
   const addMlSeconds2 = 60 * 10000000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
@@ -192,7 +192,7 @@ function screenshot() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   const fechaConParametros = new Date()
   const numberOfMlSeconds = fechaConParametros.getTime();
-    const addMlSeconds = 60 * 1600000;
+  const addMlSeconds = 60 * 1600000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
   const addMlSeconds2 = 60 * 10000000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
@@ -392,7 +392,7 @@ function elegir() {
       document.getElementById('territorios10').innerText = terri10;
       break;
 
-    case 'Viernes-tarde':
+    case 'Viernes-Reunion':
       let horaViernesTarde = document.getElementById('hora').value
       document.querySelector('.horas11').innerText = `${horaViernesTarde} hs`;
 
@@ -406,7 +406,12 @@ function elegir() {
       document.getElementById('territorios11').innerText = terri11;
       break;
 
-    case 'Viernes-tarde2':
+    
+
+    // FIN VIERNES
+
+    // INICIO SABADO
+    case 'Sabado':
       let horaViernesTardeB = document.getElementById('hora').value
       document.querySelector('.horas12').innerText = `${horaViernesTardeB} hs`;
 
@@ -420,11 +425,7 @@ function elegir() {
       document.getElementById('territorios12').innerText = terri12;
       break;
 
-    // FIN VIERNES
-
-    // INICIO SABADO
-
-    case 'Sabado':
+    case 'Sabado-mañana':
       let horaSabado = document.getElementById('hora').value
       document.querySelector('.horas13').innerText = `${horaSabado} hs`;
 
@@ -438,6 +439,8 @@ function elegir() {
       let terri13 = document.getElementById('territorio').value
       document.getElementById('territorios13').innerText = terri13;
       break;
+
+      
 
     case 'Sabado-tarde':
       let horaSabadoTarde = document.getElementById('hora').value
