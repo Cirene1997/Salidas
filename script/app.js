@@ -48,6 +48,11 @@ hora.addEventListener('change', (e) => {
   e.preventDefault();
   document.getElementById('hora').style.border = '1px solid black';
   document.getElementById('hora').style.background = '#fff';
+  document.getElementById('hora').style.background = '#fff'; 
+  document.getElementById('errorDato').innerText = 'ok'; 
+  document.getElementById('errorDato').style.color = 'ok'; 
+  document.getElementById('errorDato').classList.add ('okDato') 
+  
 })
 
 
@@ -55,12 +60,16 @@ conductor.addEventListener('change', (e) => {
   e.preventDefault();
   document.getElementById('conductor').style.border = '1px solid black';
   document.getElementById('conductor').style.background = '#fff';
+  document.getElementById('errorDato2').innerText = 'ok'; 
+  document.getElementById('errorDato2').classList.add ('okDato') 
 })
 
 territorio.addEventListener('change', (e) => {
   e.preventDefault();
   document.getElementById('territorio').style.border = '1px solid black';
   document.getElementById('territorio').style.background = '#fff';
+  document.getElementById('errorDato3').innerText = 'ok'; 
+  document.getElementById('errorDato3').classList.add ('okDato') 
 })
 
 
@@ -68,6 +77,8 @@ lugar.addEventListener('change', (e) => {
   e.preventDefault();
   document.getElementById('lugar').style.border = '1px solid black';
   document.getElementById('lugar').style.background = '#fff';
+  document.getElementById('errorDato4').innerText = 'ok'; 
+  document.getElementById('errorDato4').classList.add ('okDato') 
 })
 
 
@@ -77,8 +88,10 @@ if(hora.value == ''){
     title: ` Falto algun dato`,
     icon: 'question',
   })
-  document.getElementById('hora').style.border = '4px solid black';
-  document.getElementById('hora').style.background = 'red';
+  document.getElementById('hora').style.border = '2px solid red';
+  document.getElementById('hora').style.background = '#f3b2b2';
+  document.getElementById('errorDato').style.visibility = 'visible';
+
 }else{
   Swal.fire({
     title: `Excelente trabajo, se coloco correctamente`,
@@ -95,9 +108,9 @@ if(conductor.value == ''){
     title: ` Falto algun dato`,
     icon: 'question',
   })
-  document.getElementById('conductor').style.border = '4px solid black';
-  document.getElementById('conductor').style.background = 'red';
-  conductor.value 
+  document.getElementById('conductor').style.border = '2px solid red';
+  document.getElementById('conductor').style.background = '#f3b2b2';
+  document.getElementById('errorDato2').style.visibility = 'visible';
 }else{
   Swal.fire({
     title: `Excelente trabajo, se coloco correctamente`,
@@ -113,9 +126,9 @@ if(territorio.value == ''){
     title: ` Falto algun dato`,
     icon: 'question',
   })
-  document.getElementById('territorio').style.border = '4px solid black';
-  document.getElementById('territorio').style.background = 'red';
-  territorio.value 
+  document.getElementById('territorio').style.border = '2px solid red';
+  document.getElementById('territorio').style.background = '#f3b2b2';
+  document.getElementById('errorDato3').style.visibility = 'visible';
 }else{
   Swal.fire({
     title: `Excelente trabajo, se coloco correctamente`,
@@ -131,9 +144,10 @@ if(lugar.value == ''){
     title: ` Falto algun dato`,
     icon: 'question',
   })
-  document.getElementById('lugar').style.border = '4px solid black';
-  document.getElementById('lugar').style.background = 'red';
-  lugar.value 
+  document.getElementById('lugar').style.border = '2px solid red';
+  document.getElementById('lugar').style.background = '#f3b2b2';
+  document.getElementById('errorDato4').style.visibility = 'visible';
+  
 }else{
   Swal.fire({
     title: `Excelente trabajo, se coloco correctamente`,
@@ -142,13 +156,6 @@ if(lugar.value == ''){
  
 }
 }
-
-
-
-
-
-
-
 
 
 
