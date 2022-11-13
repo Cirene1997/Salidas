@@ -57,7 +57,7 @@
   top: 15px;
 }
 .horas12 {
-  background-color: var(--clearViolet);
+  background-color: var(--ligthblueFort);
   color: var(--black);
 }
 
@@ -151,6 +151,11 @@ form > input[type="button"]:hover {
   color: var(--white);
   border: none;
   font-size: 25px;
+}
+
+h3{
+  width: 100%;
+  background-color: var(--ligthblueFort);
 }
 
 @media screen and (max-width: 980px) {
