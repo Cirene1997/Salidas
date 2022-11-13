@@ -14,12 +14,30 @@
   --black: #000;
   --ligthblue: #aeeaf9;
   --ligthblueFort: #4c95ed;
+  --ligthRed: #f3b2b2;
+  
 }
-/* .container{
-  position: relative;
-  width: auto;
-  height: 100vh;
-} */
+.errorDato{
+  color: var(--red);
+  font-size: 30px;
+  margin-left: 10px;
+  width: 45px;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+.okDato{
+  color: var(--white);
+  font-size: 30px;
+  margin-left: 10px;
+  width: 45px;
+  border: 2px solid var(--ligthblueFort);
+  border-radius: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+
 .titulo {
   color: var(--white);
 }
@@ -159,9 +177,6 @@ h3{
 }
 
 
-
-
-
 @media screen and (max-width: 980px) {
   .conteiner2 .valores2 > h2 {
     font-size: 15px;
@@ -169,11 +184,11 @@ h3{
   .conteiner2 .valores2 > h3 {
     font-size: 15px;
   }
-  table{
+  table {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color:var(--blueviolet);
+    background-color: var(--blueviolet);
   }
 
   tr {
@@ -200,7 +215,6 @@ h3{
     top: 15px;
   }
   .horas11 {
- 
     background-color: var(--ligthblueFort);
     color: var(--black);
   }
@@ -212,7 +226,7 @@ h3{
     text-align: center;
     border: solid 1px var(--blue);
     width: 650px;
-    height:300px;
+    height: 300px;
     background-color: var(--blueviolet);
     left: 0px;
   }
@@ -249,7 +263,7 @@ h3{
     display: flex;
     flex-direction: column;
     top: 1px;
-    left:0px;
+    left: 0px;
     width: 100%;
     height: 100%;
     font-size: 20px;
@@ -295,3 +309,4 @@ h3{
     font-size: 25px;
   }
 } ;
+
