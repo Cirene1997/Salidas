@@ -195,7 +195,7 @@ h3{
 .okDato{
   color: var(--white);
   font-size: 15px;
-  margin-left: 10px;
+  margin-left: 5px;
   width: 35px;
   border: 2px solid var(--ligthblueFort);
   border-radius: 50%;
@@ -206,10 +206,10 @@ h3{
 
 .errorDatoMedia{
   color: var(--red);
-  font-size: 30px;
+  font-size: 15px;
   left: -8px;
   margin-left: 5px;
-  width: 45px;
+  width: 35px;
   border: 2px solid var(--red);
   border-radius: 50%;
   position: absolute;
@@ -218,9 +218,9 @@ h3{
 .okDatoMedia{
   color: var(--white);
   left: -8px;
-  font-size: 30px;
+  font-size: 15px;
   margin-left: 10px;
-  width: 45px;
+  width: 35px;
   border: 2px solid var(--ligthblueFort);
   border-radius: 50%;
   position: absolute;
