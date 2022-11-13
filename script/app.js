@@ -230,7 +230,7 @@ function screenshot() {
       var link = document.getElementById('download');
       var image = canvas.toDataURL();
       link.href = image;
-      link.download = `Salidas.png` + ` ${salidaFecha.getDate()} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`;
+      link.download = `Salidas.png`; /*+ ` ${salidaFecha.getDate()} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`*/
     }
 
   });
