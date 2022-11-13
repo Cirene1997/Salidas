@@ -184,7 +184,7 @@ h3{
 .errorDatoMedia{
   color: var(--red);
   font-size: 15px;
-  left: 5px;
+  left: -2px;
   width: 35px;
   border: 2px solid var(--red);
   border-radius: 50%;
@@ -193,7 +193,7 @@ h3{
 }
 .okDatoMedia{
   color: var(--white);
-  left: 5px;
+  left: -2px;
   font-size: 15px;
   margin-left: 0px;
   width: 35px;
