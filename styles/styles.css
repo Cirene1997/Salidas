@@ -181,8 +181,30 @@ h3{
 /* COMIENZO MEDIA QUERY */
 
 @media screen and (max-width: 980px) {
+.errorDatoMedia{
+  color: var(--red);
+  font-size: 15px;
+  left: 35px;
+  width: 35px;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+.okDatoMedia{
+  color: var(--white);
+  left: 35px;
+  font-size: 15px;
+  margin-left: 0px;
+  width: 35px;
+  border: 2px solid var(--ligthblueFort);
+  border-radius: 50%;
+  position: absolute;
+  visibility: hidden;
+}
 
-  .errorDato{
+
+.errorDato{
   color: var(--red);
   font-size: 15px;
   margin-left: 5px;
@@ -202,30 +224,7 @@ h3{
   position: absolute;
   visibility: hidden;
 }
-  
 
-.errorDatoMedia{
-  color: var(--red);
-  font-size: 15px;
-  left: -8px;
-  margin-left: 5px;
-  width: 35px;
-  border: 2px solid var(--red);
-  border-radius: 50%;
-  position: absolute;
-  visibility: hidden;
-}
-.okDatoMedia{
-  color: var(--white);
-  left: -8px;
-  font-size: 15px;
-  margin-left: 10px;
-  width: 35px;
-  border: 2px solid var(--ligthblueFort);
-  border-radius: 50%;
-  position: absolute;
-  visibility: hidden;
-}
 
 
 
