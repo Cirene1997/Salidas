@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salidas</title>
+    <link rel="shortcut icon" href="../img/terri.png" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+</head>
+
+<body>
+<!-- <div class="container"></div> -->
+    <div class="conteiner">
+        <div class="valores" id="valores">
+            <h2 class="titulo">Predi Alcorta</h2>
+            <form action="POST" id="form">
+                <input type="text" id="hora" placeholder="Hora" name="horas" class="input" required>
+                <input type="text" id="conductor" placeholder="Conductor" name="conductor" class="input" required>
+                <input type="text" id="territorio" placeholder="Territorio" name="territorio" class="input" required>
+                <input type="text" id="lugar" placeholder="Lugar" name="lugar" class="input" required><br>
+
+                <select name="dias" id="dias">
+                    <option type="checkbox" value="Lunes">LUNES</option>
+                    <option type="checkbox" value="Martes">MARTES</option>
+                    <option type="checkbox" value="Martes-tarde">MARTES-TARDE</option>
+                    <option type="checkbox" value="Martes-tarde2">MARTES-TARDE2</option>
+                    <option type="checkbox" value="Miercoles">MIERCOLES</option>
+                    <option type="checkbox" value="Miercoles-tarde">MIERCOLES-TARDE</option>
+                    <option type="checkbox" value="Miercoles-tarde2">MIERCOLES-TARDE2</option>
+                    <option type="checkbox" value="Jueves">JUEVES</option>
+                    <option type="checkbox" value="Jueves-tarde">JUEVES-TARDE</option>
+                    <option type="checkbox" value="Jueves-tarde2">JUEVES-TARDE2</option>
+                    <option type="checkbox" value="Viernes">VIERNES</option>
+                    <option type="checkbox" value="Viernes-tarde">VIERNES-TARDE</option>
+                    <option type="checkbox" value="Viernes-tarde2">VIERNES-TARDE2</option>
+                    <option type="checkbox" value="Sabado">SABADO</option>
+                    <option type="checkbox" value="Sabado-tarde">SABADO-TARDE</option>
+                    <option type="checkbox" value="Sabado-tarde2">SABADO-TARDE2</option>
+                </select>
+
+                <input class="Finalizar" id="finalizar" name="finalizar" type="button" value="Finalizar">
+                <input class="Dia" id="sigDia" name="dia" type="button" value="Sig. Dia">
+
+            </form>
+        </div>
+    </div>
+
+    <canvas id="canvas"> </canvas>
+    <div class="conteiner2">
+        <div class="valores2" id="valores">
+            <h2 class="titulo" id="titulo">Predi Alcorta</h2>
+            <h3 id="semanas"></h3>
+            <table id="tablaValor">
+                <tr style="border-bottom: 15px solid transparent ;">
+                    <th>Dia</th>
+                    <th>Horario</th>
+                    <th>Mañana/Tarde</th>
+                    <th>Conductor</th>
+                    <th>Lugar</th>
+                    <th>Territorio</th>
+                </tr>
+
+                <tr  style="border-bottom: solid #fff 2px;">
+                    <th id="lunes">LUNES</th>
+                    <td class="horas"></td>
+                    <td id="diaTarde">Mañana</td>
+                    <td id="conductores"></td>
+                    <td id="lugares"></td>
+                    <td id="territorios"></td>
+
+                </tr>
+
+                <tr  style="border-bottom: 3px double transparent ;">
+                    <th id="Martes">MARTES</th>
+                    <td class="horas1"></td>
+                    <td id="diaTarde1">Mañana</td>
+                    <td id="conductoresA"></td>
+                    <td id="lugares1"></td>
+                    <td id="territorios1"></td>
+                </tr>
+                <tr >
+                    <th style="visibility: hidden ">MARTES-TARDE</th>
+                    <td class="horas2"></td>
+                    <td id="diaTarde2">Tarde</td>
+                    <td id="conductoresB"></td>
+                    <td id="lugares2"></td>
+                    <td id="territorios2"></td>
+                </tr>
+                <tr  style="border-bottom: solid #fff 2px;">
+                    <th style="visibility: hidden ">MARTES-TARDE-2</th>
+                    <td class="horas3"></td>
+                    <td id="diaTarde3">Tarde</td>
+                    <td id="conductores3"></td>
+                    <td id="lugares3"></td>
+                    <td id="territorios3"></td>
+                </tr>
+                <tr  style="border-bottom: 3px double transparent ;">
+                    <th id="Miercoles">MIERCOLES</th>
+                    <td class="horas4"></td>
+                    <td id="diaTarde4">Mañana</td>
+                    <td id="conductores4"></td>
+                    <td id="lugares4"></td>
+                    <td id="territorios4"></td>
+                </tr>
+                <tr >
+                    <th style="visibility: hidden ">MIERCOLES-TARDE</th>
+                    <td class="horas5"></td>
+                    <td id="diaTarde5">Tarde</td>
+                    <td id="conductores5"></td>
+                    <td id="lugares5"></td>
+                    <td id="territorios5"></td>
+                </tr>
+                <tr  style="border-bottom: solid #fff 2px;">
+                    <th style="visibility: hidden ">MIERCOLES-TARDE-2</th>
+                    <td class="horas6"></td>
+                    <td id="diaTarde6">Tarde</td>
+                    <td id="conductores6"></td>
+                    <td id="lugares6"></td>
+                    <td id="territorios6"></td>
+                </tr>
+                <tr >
+                    <th id="Jueves">JUEVES</th>
+                    <td class="horas7"></td>
+                    <td id="diaTarde7">Mañana</td>
+                    <td id="conductores7"></td>
+                    <td id="lugares7"></td>
+                    <td id="territorios7"></td>
+                </tr>
+                <tr  style="border-bottom: 3px double transparent ;">
+                    <th style="visibility: hidden ">JUEVES-TARDE</th>
+                    <td class="horas8"></td>
+                    <td id="diaTarde8">Tarde</td>
+                    <td id="conductores8"></td>
+                    <td id="lugares8"></td>
+                    <td id="territorios8"></td>
+                </tr>
+                <tr  style="border-bottom: solid #fff 2px;">
+                    <th style="visibility: hidden ">JUEVES-TARDE-2</th>
+                    <td class="horas9"></td>
+                    <td id="diaTarde9">Tarde</td>
+                    <td id="conductores9"></td>
+                    <td id="lugares9"></td>
+                    <td id="territorios9"></td>
+                </tr>
+                <tr >
+                    <th id="Viernes">VIERNES</th>
+                    <td class="horas10"></td>
+                    <td id="diaTarde10">Mañana</td>
+                    <td id="conductores10"></td>
+                    <td id="lugares10"></td>
+                    <td id="territorios10"></td>
+                </tr>
+                <tr  style="border-bottom: 3px double transparent ;">
+                    <th style="visibility: hidden ">VIERNES-TARDE</th>
+                    <td class="horas11"></td>
+                    <td id="diaTarde11">Tarde</td>
+                    <td id="conductores11"></td>
+                    <td id="lugares11"></td>
+                    <td id="territorios11"></td>
+                </tr>
+                <tr  style="border-bottom: solid #fff 2px;">
+                    <th class="horas12" style="visibility: visible ">VIERNES TARDE</th>
+                    <td class="horas12">19 Hs</td>
+                    <td class="horas12" id="diaTarde12">TODOS</td>
+                    <td class="horas12" id="conductores12">INVITADOS A</td>
+                    <td class="horas12" id="lugares12">LA REUNION</td>
+                    <td class="horas12" id="territorios12">ALCORTA</td>
+                </tr>
+                <tr >
+                    <th id="Sabado">SABADO</th>
+                    <td class="horas13"></td>
+                    <td id="diaTarde13">Mañana</td>
+                    <td id="conductores13"></td>
+                    <td id="lugares13"></td>
+                    <td id="territorios13"></td>
+                </tr>
+                <tr  style="border-bottom: 2px double transparent ;">
+                    <th style="visibility: hidden ">SABADO-TARDE</th>
+                    <td class="horas14"></td>
+                    <td id="diaTarde14">Tarde</td>
+                    <td id="conductores14"></td>
+                    <td id="lugares14"></td>
+                    <td id="territorios14"></td>
+                </tr>
+                <tr >
+                    <th style="visibility: hidden ">SABADO-TARDE-2</th>
+                    <td  class="horas15"></td>
+                    <td  id="diaTarde15">Tarde</td>
+                    <td  id="conductores15"></td>
+                    <td  id="lugares15"></td>
+                    <td  id="territorios15"></td>
+                </tr>
+            </table>
+        </div>
+
+        <template id="my-template">
+            <swal-title>
+                Vamos a Confirmar los arreglos hermano 🤗
+            </swal-title>
+            <swal-icon type="success" color="var(--blueviolet)"></swal-icon>
+
+            <swal-button type="confirm">
+                <a id="download" style="color:#fff; font-size:20px";>Tomar screenshot y descargar</a>
+            </swal-button>
+
+            <swal-button type="deny">
+                Cerrar y Revisar
+            </swal-button>
+            <swal-param name="allowEscapeKey" value="true" />
+            <swal-param name="customClass" value='{ "popup": "my-popup" }' />
+            <swal-function-param name="didOpen" value="popup => console.log(popup)" />
+
+        </template>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</body>
+<script src="../script/app.js" type="module"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="swetAlert.js"></script>
+
+</html>
