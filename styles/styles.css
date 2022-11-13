@@ -182,12 +182,33 @@ h3{
 
 @media screen and (max-width: 980px) {
 
+  .errorDato{
+  color: var(--red);
+  font-size: 15px;
+  margin-left: 5px;
+  width: 35px;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+.okDato{
+  color: var(--white);
+  font-size: 15px;
+  margin-left: 10px;
+  width: 35px;
+  border: 2px solid var(--ligthblueFort);
+  border-radius: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+  
 
 .errorDatoMedia{
   color: var(--red);
   font-size: 30px;
   left: -8px;
-  margin-left: 10px;
+  margin-left: 5px;
   width: 45px;
   border: 2px solid var(--red);
   border-radius: 50%;
