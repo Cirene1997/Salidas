@@ -56,7 +56,7 @@
   left: 35px;
   top: 15px;
 }
-.horas12 {
+.horas11 {
   background-color: var(--ligthblueFort);
   color: var(--black);
 }
@@ -197,9 +197,9 @@ h3{
     left: 5px;
     top: 15px;
   }
-  .horas12 {
+  .horas11 {
  
-    background-color: var(--clearViolet);
+    background-color: var(--ligthblueFort);
     color: var(--black);
   }
 
