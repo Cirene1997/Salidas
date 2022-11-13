@@ -51,7 +51,8 @@ hora.addEventListener('change', (e) => {
   document.getElementById('hora').style.background = '#fff'; 
   document.getElementById('errorDato').innerText = 'ok'; 
   document.getElementById('errorDato').style.color = 'ok'; 
-  document.getElementById('errorDato').classList.add ('okDato') 
+  document.getElementById('errorDato').classList.add ('okDato');
+  document.getElementById('errorDato').classList.add ('okDatoMedia');
   
 })
 
@@ -61,7 +62,8 @@ conductor.addEventListener('change', (e) => {
   document.getElementById('conductor').style.border = '1px solid black';
   document.getElementById('conductor').style.background = '#fff';
   document.getElementById('errorDato2').innerText = 'ok'; 
-  document.getElementById('errorDato2').classList.add ('okDato') 
+  document.getElementById('errorDato2').classList.add ('okDato');
+  // document.getElementById('errorDato2').classList.add ('okDatoMedia');
 })
 
 territorio.addEventListener('change', (e) => {
@@ -69,7 +71,8 @@ territorio.addEventListener('change', (e) => {
   document.getElementById('territorio').style.border = '1px solid black';
   document.getElementById('territorio').style.background = '#fff';
   document.getElementById('errorDato3').innerText = 'ok'; 
-  document.getElementById('errorDato3').classList.add ('okDato') 
+  document.getElementById('errorDato3').classList.add ('okDato')
+  document.getElementById('errorDato3').classList.add ('okDatoMedia')
 })
 
 
@@ -78,7 +81,8 @@ lugar.addEventListener('change', (e) => {
   document.getElementById('lugar').style.border = '1px solid black';
   document.getElementById('lugar').style.background = '#fff';
   document.getElementById('errorDato4').innerText = 'ok'; 
-  document.getElementById('errorDato4').classList.add ('okDato') 
+  document.getElementById('errorDato4').classList.add ('okDato');
+  // document.getElementById('errorDato4').classList.add ('okDatoMedia');
 })
 
 
@@ -156,6 +160,13 @@ if(lugar.value == ''){
  
 }
 }
+
+
+
+
+
+
+
 
 
 
