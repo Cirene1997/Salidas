@@ -48,12 +48,12 @@ hora.addEventListener('change', (e) => {
   e.preventDefault();
   document.getElementById('hora').style.border = '1px solid black';
   document.getElementById('hora').style.background = '#fff';
-  document.getElementById('hora').style.background = '#fff'; 
-  document.getElementById('errorDato').innerText = 'ok'; 
-  document.getElementById('errorDato').style.color = 'ok'; 
-  document.getElementById('errorDato').classList.add ('okDato');
-  document.getElementById('errorDato').classList.add ('okDatoMedia');
-  
+  document.getElementById('hora').style.background = '#fff';
+  document.getElementById('errorDato').innerText = 'ok';
+  document.getElementById('errorDato').style.color = 'ok';
+  document.getElementById('errorDato').classList.add('okDato');
+  document.getElementById('errorDato').classList.add('okDatoMedia');
+
 })
 
 
@@ -61,18 +61,17 @@ conductor.addEventListener('change', (e) => {
   e.preventDefault();
   document.getElementById('conductor').style.border = '1px solid black';
   document.getElementById('conductor').style.background = '#fff';
-  document.getElementById('errorDato2').innerText = 'ok'; 
-  document.getElementById('errorDato2').classList.add ('okDato');
-  // document.getElementById('errorDato2').classList.add ('okDatoMedia');
+  document.getElementById('errorDato2').innerText = 'ok';
+  document.getElementById('errorDato2').classList.add('okDato');
 })
 
 territorio.addEventListener('change', (e) => {
   e.preventDefault();
   document.getElementById('territorio').style.border = '1px solid black';
   document.getElementById('territorio').style.background = '#fff';
-  document.getElementById('errorDato3').innerText = 'ok'; 
-  document.getElementById('errorDato3').classList.add ('okDato')
-  document.getElementById('errorDato3').classList.add ('okDatoMedia')
+  document.getElementById('errorDato3').innerText = 'ok';
+  document.getElementById('errorDato3').classList.add('okDato')
+  document.getElementById('errorDato3').classList.add('okDatoMedia')
 })
 
 
@@ -80,85 +79,128 @@ lugar.addEventListener('change', (e) => {
   e.preventDefault();
   document.getElementById('lugar').style.border = '1px solid black';
   document.getElementById('lugar').style.background = '#fff';
-  document.getElementById('errorDato4').innerText = 'ok'; 
-  document.getElementById('errorDato4').classList.add ('okDato');
-  // document.getElementById('errorDato4').classList.add ('okDatoMedia');
+  document.getElementById('errorDato4').innerText = 'ok';
+  document.getElementById('errorDato4').classList.add('okDato');
 })
 
 
 function valorHora() {
-if(hora.value == ''){
-  Swal.fire({
-    title: ` Falto algun dato`,
-    icon: 'question',
-  })
-  document.getElementById('hora').style.border = '2px solid red';
-  document.getElementById('hora').style.background = '#f3b2b2';
-  document.getElementById('errorDato').style.visibility = 'visible';
+  if (hora.value == '') {
+    Swal.fire({
+      title: ` Falto algun dato`,
+      icon: 'question',
+    })
+    document.getElementById('hora').style.border = '2px solid red';
+    document.getElementById('hora').style.background = '#f3b2b2';
+    document.getElementById('errorDato').style.visibility = 'visible';
+    document.getElementById('errorDato').innerText = 'X';
+    document.getElementById('errorDato').classList.add('errorDato');
+    document.getElementById('errorDato').classList.add('errorDatoMedia');
+    document.getElementById('errorDato').classList.remove('okDato');
+    document.getElementById('errorDato').classList.remove('okDatoMedia');
 
-}else{
-  Swal.fire({
-    title: `Excelente trabajo, se coloco correctamente`,
-    icon: 'success',
-  });
- 
-}
+  } else {
+    Swal.fire({
+      title: `Excelente trabajo, se coloco correctamente`,
+      icon: 'success',
+    });
+
+    document.getElementById('hora').style.border = '1px solid black';
+    document.getElementById('hora').style.background = '#fff';
+    document.getElementById('hora').style.background = '#fff';
+    document.getElementById('errorDato').innerText = 'ok';
+    document.getElementById('errorDato').classList.add('okDato');
+    document.getElementById('errorDato').classList.add('okDatoMedia');
+  }
 }
 
 
 function valorConductor() {
-if(conductor.value == ''){
-  Swal.fire({
-    title: ` Falto algun dato`,
-    icon: 'question',
-  })
-  document.getElementById('conductor').style.border = '2px solid red';
-  document.getElementById('conductor').style.background = '#f3b2b2';
-  document.getElementById('errorDato2').style.visibility = 'visible';
-}else{
-  Swal.fire({
-    title: `Excelente trabajo, se coloco correctamente`,
-    icon: 'success',
-  });
-  
-}
+  if (conductor.value == '') {
+    Swal.fire({
+      title: ` Falto algun dato`,
+      icon: 'question',
+    })
+    document.getElementById('conductor').style.border = '2px solid red';
+    document.getElementById('conductor').style.background = '#f3b2b2';
+    document.getElementById('errorDato2').style.visibility = 'visible';
+    document.getElementById('errorDato2').innerText = 'X';
+    document.getElementById('errorDato2').classList.add('errorDato');
+    document.getElementById('errorDato2').classList.remove('okDato');
+  } else {
+    Swal.fire({
+      title: `Excelente trabajo, se coloco correctamente`,
+      icon: 'success',
+    });
+
+    document.getElementById('conductor').style.border = '1px solid black';
+    document.getElementById('conductor').style.background = '#fff';
+    document.getElementById('errorDato2').innerText = 'ok';
+    document.getElementById('errorDato2').classList.add('okDato');
+    document.getElementById('errorDato2').classList.remove('errorDato');
+
+  }
 }
 
 function valorTerritorio() {
-if(territorio.value == ''){
-  Swal.fire({
-    title: ` Falto algun dato`,
-    icon: 'question',
-  })
-  document.getElementById('territorio').style.border = '2px solid red';
-  document.getElementById('territorio').style.background = '#f3b2b2';
-  document.getElementById('errorDato3').style.visibility = 'visible';
-}else{
-  Swal.fire({
-    title: `Excelente trabajo, se coloco correctamente`,
-    icon: 'success',
-  });
- 
-}
+  if (territorio.value == '') {
+    Swal.fire({
+      title: ` Falto algun dato`,
+      icon: 'question',
+    })
+    document.getElementById('territorio').style.border = '2px solid red';
+    document.getElementById('territorio').style.background = '#f3b2b2';
+    document.getElementById('errorDato3').style.visibility = 'visible';
+    document.getElementById('errorDato3').innerText = 'X';
+    document.getElementById('errorDato3').classList.add('errorDato');
+    document.getElementById('errorDato3').classList.add('errorDatoMedia');
+    document.getElementById('errorDato3').classList.remove('okDato');
+    document.getElementById('errorDato3').classList.remove('okDatoMedia');
+  } else {
+    Swal.fire({
+      title: `Excelente trabajo, se coloco correctamente`,
+      icon: 'success',
+    });
+    document.getElementById('territorio').style.border = '1px solid black';
+    document.getElementById('territorio').style.background = '#fff';
+    document.getElementById('errorDato3').innerText = 'ok';
+    document.getElementById('errorDato3').classList.add('okDato')
+    document.getElementById('errorDato3').classList.add('okDatoMedia')
+  }
 }
 
+
+
+
 function valorLugar() {
-if(lugar.value == ''){
-  Swal.fire({
-    title: ` Falto algun dato`,
-    icon: 'question',
-  })
-  document.getElementById('lugar').style.border = '2px solid red';
-  document.getElementById('lugar').style.background = '#f3b2b2';
-  document.getElementById('errorDato4').style.visibility = 'visible';
-  
-}else{
-  Swal.fire({
-    title: `Excelente trabajo, se coloco correctamente`,
-    icon: 'success',
-  });
- 
-}
+  if (lugar.value == '') {
+    Swal.fire({
+      title: ` Falto algun dato`,
+      icon: 'question',
+    })
+    document.getElementById('lugar').style.border = '2px solid red';
+    document.getElementById('lugar').style.background = '#f3b2b2';
+    document.getElementById('errorDato4').style.visibility = 'visible';
+    document.getElementById('errorDato4').classList.add('errorDato');
+    document.getElementById('errorDato4').classList.remove('okDato');
+    document.getElementById('errorDato4').innerText = 'X';
+
+
+
+
+  } else {
+    Swal.fire({
+      title: `Excelente trabajo, se coloco correctamente`,
+      icon: 'success',
+    });
+    document.getElementById('lugar').style.border = '1px solid black';
+    document.getElementById('lugar').style.background = '#fff';
+    document.getElementById('errorDato4').innerText = 'ok';
+    document.getElementById('errorDato4').classList.add('okDato');
+    document.getElementById('errorDato4').classList.remove('errorDato');
+
+
+  }
 }
 
 
@@ -222,7 +264,7 @@ function screenshot() {
   }
 
 
-  const imprimir = document.querySelector('.conteiner2')
+  const imprimir = document.querySelector('.tablaValor')
   html2canvas(imprimir, {
     onrendered(canvas) {
       imprimir.fillText = canvas
@@ -230,7 +272,8 @@ function screenshot() {
       var link = document.getElementById('download');
       var image = canvas.toDataURL();
       link.href = image;
-      link.download = `Salidas.png`; /*+ ` ${salidaFecha.getDate()} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`*/
+      link.download = `Salidas.png`;
+      // + ` ${salidaFecha.getDate()} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`;
     }
 
   });
@@ -424,7 +467,7 @@ function elegir() {
       document.getElementById('territorios11').innerText = terri11;
       break;
 
-    
+
 
     // FIN VIERNES
 
@@ -458,7 +501,7 @@ function elegir() {
       document.getElementById('territorios13').innerText = terri13;
       break;
 
-      
+
 
     case 'Sabado-tarde':
       let horaSabadoTarde = document.getElementById('hora').value
@@ -494,9 +537,39 @@ function elegir() {
       icon: 'warning',
     })
   }
-  
+
 
 }
+
+
+
+
+
+// prueba de calendario
+
+const getURL = year => `https://nolaborables.com.ar/api/v2/feriados/${year}?formato=mensual&incluir=opcional`
+const maxYear = 2019
+
+const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+
+const days = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo']
+const numDays = (month, year) => new Date(year, month + 1, 0).getDate()
+const firstDay = (month, year) => new Date(year, month, 1).getDay()
+const dayOfWeek = (day, month, year) => new Date(year, month, day).getDay();
+
+console.log(getURL)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
