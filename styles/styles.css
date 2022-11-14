@@ -36,11 +36,12 @@ table {
 .tituloTabla{
   position: relative;
   width: 38%;
-  top: -5px;
+  top: -1px;
   right: -290px;
   font-size: large;
   color:var(--white);
-  /* border: red 5px solid; */
+  background-color: var(--ligthblueFort);
+  border-radius: 15px;
 }
 
 .errorDato{
