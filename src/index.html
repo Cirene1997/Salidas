@@ -15,15 +15,19 @@
 </head>
 
 <body>
-<!-- <div class="container"></div> -->
+    <!-- <div class="container"></div> -->
     <div class="conteiner">
         <div class="valores" id="valores">
             <h2 class="titulo">Predi Alcorta</h2>
             <form action="POST" id="form">
-                <input type="text" id="hora" placeholder="Hora" name="horas" class="input" required><span class="errorDato  errorDatoMedia " id="errorDato">X</span>
-                <input type="text" id="conductor" placeholder="Conductor" name="conductor" class="input" required><span class="errorDato" id="errorDato2">X</span>
-                <input type="text" id="territorio" placeholder="Territorio" name="territorio" class="input" required><span class="errorDato  errorDatoMedia " id="errorDato3">X</span>
-                <input type="text" id="lugar" placeholder="Lugar" name="lugar" class="input" required><span class="errorDato" id="errorDato4">X</span><br>
+                <input type="text" id="hora" placeholder="Hora" name="horas" class="input" required><span
+                    class="errorDato  errorDatoMedia " id="errorDato">X</span>
+                <input type="text" id="conductor" placeholder="Conductor" name="conductor" class="input" required><span
+                    class="errorDato" id="errorDato2">X</span>
+                <input type="text" id="territorio" placeholder="Territorio" name="territorio" class="input"
+                    required><span class="errorDato  errorDatoMedia " id="errorDato3">X</span>
+                <input type="text" id="lugar" placeholder="Lugar" name="lugar" class="input" required><span
+                    class="errorDato" id="errorDato4">X</span><br>
 
                 <select name="dias" id="dias">
                     <option type="checkbox" value="Lunes">LUNES</option>
@@ -51,12 +55,12 @@
         </div>
     </div>
 
-    <canvas id="canvas"> </canvas>
     <div class="conteiner2">
         <div class="valores2" id="valores">
-            <h2 class="titulo" id="titulo">Predi Alcorta</h2>
-            <h3 id="semanas"></h3>
-            <table id="tablaValor">
+
+            <table class="tablaValor" id="tablaValor">
+                <th class=" tituloTabla" id="semanas"></th>
+               
                 <tr style="border-bottom: 15px solid transparent ;">
                     <th>Dia</th>
                     <th>Horario</th>
@@ -66,17 +70,17 @@
                     <th>Territorio</th>
                 </tr>
 
-                <tr  style="border-bottom: solid #fff 2px;">
+                <tr style="border-bottom: solid #fff 2px;">
                     <th id="lunes">LUNES</th>
                     <td class="horas"></td>
-                    <td id="diaTarde">Tarde</td>
+                    <td id="diaTarde">Mañana</td>
                     <td id="conductores"></td>
                     <td id="lugares"></td>
                     <td id="territorios"></td>
 
                 </tr>
 
-                <tr  style="border-bottom: 3px double transparent ;">
+                <tr style="border-bottom: 3px double transparent ;">
                     <th id="Martes">MARTES</th>
                     <td class="horas1"></td>
                     <td id="diaTarde1">Mañana</td>
@@ -84,7 +88,7 @@
                     <td id="lugares1"></td>
                     <td id="territorios1"></td>
                 </tr>
-                <tr >
+                <tr>
                     <th style="visibility: hidden ">MARTES-TARDE</th>
                     <td class="horas2"></td>
                     <td id="diaTarde2">Tarde</td>
@@ -92,7 +96,7 @@
                     <td id="lugares2"></td>
                     <td id="territorios2"></td>
                 </tr>
-                <tr  style="border-bottom: solid #fff 2px;">
+                <tr style="border-bottom: solid #fff 2px;">
                     <th style="visibility: hidden ">MARTES-TARDE-2</th>
                     <td class="horas3"></td>
                     <td id="diaTarde3">Tarde</td>
@@ -100,7 +104,7 @@
                     <td id="lugares3"></td>
                     <td id="territorios3"></td>
                 </tr>
-                <tr  style="border-bottom: 3px double transparent ;">
+                <tr style="border-bottom: 3px double transparent ;">
                     <th id="Miercoles">MIERCOLES</th>
                     <td class="horas4"></td>
                     <td id="diaTarde4">Mañana</td>
@@ -108,7 +112,7 @@
                     <td id="lugares4"></td>
                     <td id="territorios4"></td>
                 </tr>
-                <tr >
+                <tr>
                     <th style="visibility: hidden ">MIERCOLES-TARDE</th>
                     <td class="horas5"></td>
                     <td id="diaTarde5">Tarde</td>
@@ -116,7 +120,7 @@
                     <td id="lugares5"></td>
                     <td id="territorios5"></td>
                 </tr>
-                <tr  style="border-bottom: solid #fff 2px;">
+                <tr style="border-bottom: solid #fff 2px;">
                     <th style="visibility: hidden ">MIERCOLES-TARDE-2</th>
                     <td class="horas6"></td>
                     <td id="diaTarde6">Tarde</td>
@@ -124,7 +128,7 @@
                     <td id="lugares6"></td>
                     <td id="territorios6"></td>
                 </tr>
-                <tr >
+                <tr>
                     <th id="Jueves">JUEVES</th>
                     <td class="horas7"></td>
                     <td id="diaTarde7">Mañana</td>
@@ -132,7 +136,7 @@
                     <td id="lugares7"></td>
                     <td id="territorios7"></td>
                 </tr>
-                <tr  style="border-bottom: 3px double transparent ;">
+                <tr style="border-bottom: 3px double transparent ;">
                     <th style="visibility: hidden ">JUEVES-TARDE</th>
                     <td class="horas8"></td>
                     <td id="diaTarde8">Tarde</td>
@@ -140,7 +144,7 @@
                     <td id="lugares8"></td>
                     <td id="territorios8"></td>
                 </tr>
-                <tr  style="border-bottom: solid #fff 2px;">
+                <tr style="border-bottom: solid #fff 2px;">
                     <th style="visibility: hidden ">JUEVES-TARDE-2</th>
                     <td class="horas9"></td>
                     <td id="diaTarde9">Tarde</td>
@@ -148,7 +152,7 @@
                     <td id="lugares9"></td>
                     <td id="territorios9"></td>
                 </tr>
-                <tr >
+                <tr>
                     <th id="Viernes">VIERNES</th>
                     <td class="horas10"></td>
                     <td id="diaTarde10">Mañana</td>
@@ -156,16 +160,16 @@
                     <td id="lugares10"></td>
                     <td id="territorios10"></td>
                 </tr>
-                <tr  style="border-bottom: solid #fff 2px;">
+                <tr style="border-bottom: solid #fff 2px;">
                     <th class="horas11" style="visibility: visible "> REUNION</th>
-                    <td class="horas11" >19 Hs</td>
+                    <td class="horas11">19 Hs</td>
                     <td class="horas11" id="diaTarde11">TODOS</td>
                     <td class="horas11" id="conductores11">INVITADOS A</td>
                     <td class="horas11" id="lugares11">LA REUNION</td>
                     <td class="horas11" id="territorios11">ALCORTA</td>
                 </tr>
-                <tr  id="Sabado">
-                    <th >SABADO</th>
+                <tr id="Sabado">
+                    <th>SABADO</th>
                     <td class="horas12"></td>
                     <td id="diaTarde12">Mañana</td>
                     <td id="conductores12"></td>
@@ -173,15 +177,15 @@
                     <td id="territorios12"></td>
                 </tr>
                 <tr style="border-bottom: 3px double transparent ;">
-                    <th style="visibility: hidden " >SABADO-MAÑANA2</th>
+                    <th style="visibility: hidden ">SABADO-MAÑANA2</th>
                     <td class="horas13"></td>
                     <td id="diaTarde13">Mañana</td>
                     <td id="conductores13"></td>
                     <td id="lugares13"></td>
                     <td id="territorios13"></td>
                 </tr>
-           
-                <tr  style="border-bottom: 2px double transparent ;">
+
+                <tr style="border-bottom: 2px double transparent ;">
                     <th style="visibility: hidden ">SABADO-TARDE</th>
                     <td class="horas14"></td>
                     <td id="diaTarde14">Tarde</td>
@@ -189,16 +193,18 @@
                     <td id="lugares14"></td>
                     <td id="territorios14"></td>
                 </tr>
-                <tr >
+                <tr>
                     <th style="visibility: hidden ">SABADO-TARDE-2</th>
-                    <td  class="horas15"></td>
-                    <td  id="diaTarde15">Tarde</td>
-                    <td  id="conductores15"></td>
-                    <td  id="lugares15"></td>
-                    <td  id="territorios15"></td>
+                    <td class="horas15"></td>
+                    <td id="diaTarde15">Tarde</td>
+                    <td id="conductores15"></td>
+                    <td id="lugares15"></td>
+                    <td id="territorios15"></td>
                 </tr>
+                <td class="semanas"  id="titulo" ><b>Predicacion Alcorta</b></td>
             </table>
         </div>
+    </div>
 
         <template id="my-template">
             <swal-title>
@@ -207,7 +213,7 @@
             <swal-icon type="success" color="var(--blueviolet)"></swal-icon>
 
             <swal-button type="confirm">
-                <a id="download" style="color:#fff; font-size:20px";>Tomar screenshot y descargar</a>
+                <a id="download" style="color:#fff; font-size:20px" ;>Tomar screenshot y descargar</a>
             </swal-button>
 
             <swal-button type="deny">
