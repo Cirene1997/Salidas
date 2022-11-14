@@ -17,6 +17,31 @@
   --ligthRed: #f3b2b2;
   
 }
+table {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blueviolet);
+  border-radius: 50%;
+
+}
+.semanas{
+  border-bottom-left-radius: 10px;
+  position: relative;
+  padding-bottom: 0px;
+  width: 40%;
+  height: 15px;
+  background-color: #4c95ed;
+}
+.tituloTabla{
+  position: relative;
+  width: 38%;
+  top: -5px;
+  right: -290px;
+  font-size: large;
+  color:var(--white);
+  /* border: red 5px solid; */
+}
 
 .errorDato{
   color: var(--red);
@@ -172,19 +197,16 @@ form > input[type="button"]:hover {
   font-size: 25px;
 }
 
-h3{
-  width: 100%;
-  background-color: var(--ligthblueFort);
-}
-
 
 /* COMIENZO MEDIA QUERY */
 
 @media screen and (max-width: 980px) {
+
+
 .errorDatoMedia{
   color: var(--red);
   font-size: 15px;
-  left: -2px;
+  left:-2px;
   width: 35px;
   border: 2px solid var(--red);
   border-radius: 50%;
@@ -193,9 +215,9 @@ h3{
 }
 .okDatoMedia{
   color: var(--white);
-  left: -2px;
+  right: 5px;
   font-size: 15px;
-  margin-left: 0px;
+  left: -2px;
   width: 35px;
   border: 2px solid var(--ligthblueFort);
   border-radius: 50%;
@@ -225,6 +247,15 @@ h3{
   visibility: hidden;
 }
 
+.tituloTabla{
+  position: relative;
+  width: 25%;
+  top: -4px;
+  right: -250px;
+  font-size:15px;
+  color:var(--white);
+  /* border: red 5px solid; */
+}
 
 
 
@@ -234,22 +265,32 @@ h3{
   .conteiner2 .valores2 > h3 {
     font-size: 15px;
   }
+
+  .semanas{
+    position: relative;
+    padding-bottom: 0px;
+    width: 40%;
+    height: 15px;
+    top: -2px;
+    background-color: #4c95ed;
+  }
   table {
     position: relative;
     width: 100%;
     height: 100%;
+    border-radius: 0%;
     background-color: var(--blueviolet);
   }
 
   tr {
-    left: -25px;
+    left: 5px;
     font-size: 15px;
-    margin-top: 0px;
+    top: 10px;
     margin-bottom: 0px;
   }
   td {
     font-size: 20px;
-    margin-top: 0px;
+    top: 10px;
     margin-bottom: 0px;
   }
 
