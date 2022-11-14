@@ -250,10 +250,12 @@ form > input[type="button"]:hover {
 .tituloTabla{
   position: relative;
   width: 25%;
-  top: -4px;
+  top: -1px;
   right: -250px;
-  font-size:15px;
+  font-size:20px;
   color:var(--white);
+  border-radius: 15px;
+  background-color: var(--ligthblueFort);
   /* border: red 5px solid; */
 }
 
@@ -283,13 +285,13 @@ form > input[type="button"]:hover {
   }
 
   tr {
-    left: 5px;
-    font-size: 15px;
+    left: 0px;
+    font-size: 18px;
     top: 10px;
     margin-bottom: 0px;
   }
   td {
-    font-size: 20px;
+    font-size: 18px;
     top: 10px;
     margin-bottom: 0px;
   }
