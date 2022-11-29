@@ -258,8 +258,8 @@ form > input[type="button"]:hover {
   position: relative;
   width: 25%;
   top: -1px;
-  right: -250px;
-  font-size:20px;
+  right: -185px;
+  font-size: 15px;
   color:var(--white);
   border-radius: 15px;
   background-color: var(--ligthblueFort);
