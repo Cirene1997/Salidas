@@ -32,8 +32,8 @@
                 <select name="dias" id="dias">
                     <option type="checkbox" value="Lunes">LUNES</option>
                     <option type="checkbox" value="Martes">MARTES</option>
-                    <option type="checkbox" value="Martes-tarde">MARTES-TARDE</option>
-                    <option type="checkbox" value="Martes-tarde2">MARTES-TARDE2</option>
+                    <!-- <option type="checkbox" value="Martes-tarde"></option> -->
+                    <option type="checkbox" value="Martes-tarde2">REUNION</option>
                     <option type="checkbox" value="Miercoles">MIERCOLES</option>
                     <option type="checkbox" value="Miercoles-tarde">MIERCOLES-TARDE</option>
                     <option type="checkbox" value="Miercoles-tarde2">MIERCOLES-TARDE2</option>
@@ -41,7 +41,8 @@
                     <option type="checkbox" value="Jueves-tarde">JUEVES-TARDE</option>
                     <option type="checkbox" value="Jueves-tarde2">JUEVES-TARDE2</option>
                     <option type="checkbox" value="Viernes">VIERNES</option>
-                    <option type="checkbox" value="Viernes-Reunion">REUNION</option>
+                    <option type="checkbox" value="Viernes-Tarde">VIERNES-TARDE</option>
+                    <option type="checkbox" value="Viernes-Tarde2">VIERNES-TARDE2</option>
                     <option type="checkbox" value="Sabado">SABADO</option>
                     <option type="checkbox" value="Sabado-mañana">SABADO-MAÑANA</option>
                     <option type="checkbox" value="Sabado-tarde">SABADO-TARDE</option>
@@ -89,20 +90,20 @@
                     <td id="territorios1"></td>
                 </tr>
                 <tr>
-                    <th style="visibility: hidden ">MARTES-TARDE</th>
-                    <td class="horas2"></td>
-                    <td id="diaTarde2">Tarde</td>
+                    <th style="visibility: hidden "></th>
+                    <td ></td>
+                    <td  id="diaTarde2"></td>
                     <td id="conductoresB"></td>
-                    <td id="lugares2"></td>
+                    <td  id="lugares2"></td>
                     <td id="territorios2"></td>
                 </tr>
-                <tr style="border-bottom: solid #fff 2px;">
-                    <th style="visibility: hidden ">MARTES-TARDE-2</th>
-                    <td class="horas3"></td>
-                    <td id="diaTarde3">Tarde</td>
-                    <td id="conductores3"></td>
-                    <td id="lugares3"></td>
-                    <td id="territorios3"></td>
+                <tr class="horas2" style="border-bottom: solid #fff 2px;">
+                    <th class="horas2" style="visibility: visible">REUNION</th>
+                    <td class="horas2" class="horas3"><b>19 Hs</b></td>
+                    <td class="horas2" id="diaTarde3"><b>TODOS</b></td>
+                    <td class="horas2" id="conductores3"><b>INVITADOS</b></td>
+                    <td class="horas2" id="lugares3"></td>
+                    <td class="horas2" id="territorios3"><b>ALCORTA</b></td>
                 </tr>
                 <tr style="border-bottom: 3px double transparent ;">
                     <th id="Miercoles">MIERCOLES</th>
@@ -160,13 +161,21 @@
                     <td id="lugares10"></td>
                     <td id="territorios10"></td>
                 </tr>
+                <tr>
+                    <th  style="visibility: visible "></th>
+                    <td class="horas11"></td>
+                    <td id="diaTarde11">Tarde</td>
+                    <td  id="conductores11"></td>
+                    <td  id="lugares11"></td>
+                    <td id="territorios11"></td>
+                </tr>
                 <tr style="border-bottom: solid #fff 2px;">
-                    <th class="horas11" style="visibility: visible "> REUNION</th>
-                    <td class="horas11">19 Hs</td>
-                    <td class="horas11" id="diaTarde11">TODOS</td>
-                    <td class="horas11" id="conductores11">INVITADOS A</td>
-                    <td class="horas11" id="lugares11">LA REUNION</td>
-                    <td class="horas11" id="territorios11">ALCORTA</td>
+                    <th  style="visibility: hidden "></th>
+                    <td class="horas16"></td>
+                    <td  id="diaTarde16">Tarde</td>
+                    <td  id="conductores16"></td>
+                    <td  id="lugares16"></td>
+                    <td  id="territorios16"></td>
                 </tr>
                 <tr id="Sabado">
                     <th>SABADO</th>
@@ -203,6 +212,8 @@
                 </tr>
                 <td class="semanas"  id="titulo" ><b>Predicacion Alcorta</b></td>
             </table>
+           
+
         </div>
     </div>
 
