@@ -237,9 +237,9 @@ function semanasFechas() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   const fechaConParametros = new Date()
   const numberOfMlSeconds = fechaConParametros.getTime();
-  const addMlSeconds = 60 * 60000;
+  const addMlSeconds = 60 * 5000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
-  const addMlSeconds2 = 60 * 900000;
+  const addMlSeconds2 = 60 * 1100000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
   if (salidaFecha2 >= 1) {
     document.getElementById('semanas').innerHTML = `Semana ${salidaFecha.getDate()} de ${meses[salidaFecha.getMonth()]} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`
@@ -257,9 +257,9 @@ function screenshot() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   const fechaConParametros = new Date()
   const numberOfMlSeconds = fechaConParametros.getTime();
-  const addMlSeconds = 60 * 60000;
+  const addMlSeconds = 60 * 5000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
-  const addMlSeconds2 = 60 * 900000;
+  const addMlSeconds2 = 60 * 1100000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
   if (salidaFecha2 >= 1) {
     document.getElementById('semanas').innerHTML = `Semana ${salidaFecha.getDate()} de ${meses[salidaFecha.getMonth()]} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`
