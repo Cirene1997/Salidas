@@ -16,12 +16,6 @@ function terminarProceso() {
 
 
 
-
-
-
-
-
-
 const nextDay = document.getElementById('sigDia');
 const diasDeSemana = document.getElementById('dias');
 
@@ -46,14 +40,14 @@ nextDay.addEventListener('click', (e) => {
 
 hora.addEventListener('change', (e) => {
   e.preventDefault();
-  document.getElementById('hora').style.border = '1px solid black';
-  document.getElementById('hora').style.background = '#fff';
-  document.getElementById('hora').style.background = '#fff';
-  document.getElementById('errorDato').innerText = 'ok';
-  document.getElementById('errorDato').style.color = 'ok';
-  document.getElementById('errorDato').classList.add('okDato');
-  document.getElementById('errorDato').classList.add('okDatoMedia');
-
+    document.getElementById('hora').style.border = '1px solid black';
+    document.getElementById('hora').style.background = '#fff';
+    document.getElementById('hora').style.background = '#fff';
+    document.getElementById('errorDato').innerText = 'ok';
+    document.getElementById('errorDato').classList.add('okDato');
+    document.getElementById('errorDato').classList.add('okDatoMedia');
+  
+   
 })
 
 
@@ -173,7 +167,7 @@ function valorTerritorio() {
 
 
 function valorLugar() {
-  if (lugar.value == '') {
+  if (lugar.value == '')  {
     Swal.fire({
       title: ` Falto algun dato`,
       icon: 'question',
@@ -184,9 +178,6 @@ function valorLugar() {
     document.getElementById('errorDato4').classList.add('errorDato');
     document.getElementById('errorDato4').classList.remove('okDato');
     document.getElementById('errorDato4').innerText = 'X';
-
-
-
 
   } else {
     Swal.fire({
@@ -205,11 +196,29 @@ function valorLugar() {
 
 
 
+function notificacion(){
+  Notification.requestPermission().then(resultado=>{
+    console.log('Resultado :', resultado)
+  })
+}
+
+notificacion()
 
 
+function mostrarNotificacion(nombre){
+  nombre = 'Daniel'
+  if(Notification.permission === 'granted'){
+    const notifcaWeb = new Notification(`Salidas Alcorta`,{
+      icon: '../img/terri.png',
+      body: `${nombre}, como estas? solo queria comentarte que recuerdes las Salidas, si deseas haz click aqui para abrir la pagina`,
+     
+    })
+    notifcaWeb.onclick = function(){
+      window.open('https://cirene1997.github.io/Salidas/src/index.html')
+    }
+}
 
-
-
+}
 
 
 
@@ -224,19 +233,15 @@ function elegir2() {
 }
 
 
-
-
-
-
 function semanasFechas() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   const fechaConParametros = new Date()
   const numberOfMlSeconds = fechaConParametros.getTime();
-  const addMlSeconds = 60 * 1600000;
+  const addMlSeconds = 60 * 800000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
-  const addMlSeconds2 = 60 * 10000000;
+  const addMlSeconds2 = 60 * 8000000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
-  if (salidaFecha2 === 28) {
+  if (salidaFecha2 >= 1) {
     document.getElementById('semanas').innerHTML = `Semana ${salidaFecha.getDate()} de ${meses[salidaFecha.getMonth()]} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`
   }
   else {
@@ -252,16 +257,18 @@ function screenshot() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   const fechaConParametros = new Date()
   const numberOfMlSeconds = fechaConParametros.getTime();
-  const addMlSeconds = 60 * 1600000;
+  const addMlSeconds = 60 * 800000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
-  const addMlSeconds2 = 60 * 10000000;
+  const addMlSeconds2 = 60 * 8000000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
-  if (salidaFecha2 === 28) {
+  if (salidaFecha2 >= 1) {
     document.getElementById('semanas').innerHTML = `Semana ${salidaFecha.getDate()} de ${meses[salidaFecha.getMonth()]} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`
   }
   else {
     document.getElementById('semanas').innerHTML = `Semana ${salidaFecha.getDate()} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`
   }
+  setTimeout(mostrarNotificacion, 60 * 10000000)
+  setTimeout(semanasFechas, 60 * 10000000)
 
 
   const imprimir = document.querySelector('.tablaValor')
@@ -275,8 +282,10 @@ function screenshot() {
       link.download = `Salidas.png`;
       // + ` ${salidaFecha.getDate()} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`;
     }
+    
+  }
+  );
 
-  });
 
 }
 
@@ -453,7 +462,7 @@ function elegir() {
       document.getElementById('territorios10').innerText = terri10;
       break;
 
-    case 'Viernes-Reunion':
+    case 'Viernes-Tarde':
       let horaViernesTarde = document.getElementById('hora').value
       document.querySelector('.horas11').innerText = `${horaViernesTarde} hs`;
 
@@ -465,6 +474,20 @@ function elegir() {
       let terri11 = document.getElementById('territorio').value
 
       document.getElementById('territorios11').innerText = terri11;
+      break;
+
+    case 'Viernes-Tarde2':
+      let horaViernesTarde2 = document.getElementById('hora').value
+      document.querySelector('.horas16').innerText = `${horaViernesTarde2} hs`;
+
+      let conductorQ = document.getElementById('conductor').value
+      document.getElementById('conductores16').innerText = conductorQ;
+
+      let lugar16 = document.getElementById('lugar').value
+      document.getElementById('lugares16').innerText = lugar16;
+      let terri16 = document.getElementById('territorio').value
+
+      document.getElementById('territorios16').innerText = terri16;
       break;
 
 
@@ -542,22 +565,6 @@ function elegir() {
 }
 
 
-
-
-
-// prueba de calendario
-
-const getURL = year => `https://nolaborables.com.ar/api/v2/feriados/${year}?formato=mensual&incluir=opcional`
-const maxYear = 2019
-
-const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
-
-const days = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo']
-const numDays = (month, year) => new Date(year, month + 1, 0).getDate()
-const firstDay = (month, year) => new Date(year, month, 1).getDay()
-const dayOfWeek = (day, month, year) => new Date(year, month, day).getDay();
-
-console.log(getURL)
 
 
 
