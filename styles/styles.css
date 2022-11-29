@@ -54,6 +54,12 @@ table {
   position: absolute;
   visibility: hidden;
 }
+
+.falla{
+  font-size: 15px;
+  color: var(--red);
+}
+
 .okDato{
   color: var(--white);
   font-size: 30px;
@@ -62,7 +68,7 @@ table {
   border: 2px solid var(--ligthblueFort);
   border-radius: 50%;
   position: absolute;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .titulo {
@@ -101,7 +107,7 @@ table {
   left: 35px;
   top: 15px;
 }
-.horas11 {
+.horas2 {
   background-color: var(--ligthblueFort);
   color: var(--black);
 }
@@ -113,7 +119,7 @@ table {
   text-align: center;
   border: solid 1px var(--blue);
   width: 450px;
-  height: 520px;
+  height: 620px;
   background-color: var(--blueviolet);
   left: 40px;
 }
@@ -223,7 +229,7 @@ form > input[type="button"]:hover {
   border: 2px solid var(--ligthblueFort);
   border-radius: 50%;
   position: absolute;
-  visibility: hidden;
+  visibility: visible;
 }
 
 
@@ -245,7 +251,7 @@ form > input[type="button"]:hover {
   border: 2px solid var(--ligthblueFort);
   border-radius: 50%;
   position: absolute;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .tituloTabla{
@@ -308,10 +314,10 @@ form > input[type="button"]:hover {
     left: 5px;
     top: 15px;
   }
-  .horas11 {
+  /* .horas11 {
     background-color: var(--ligthblueFort);
     color: var(--black);
-  }
+  } */
 
   .conteiner {
     border-radius: 15px;
