@@ -237,7 +237,7 @@ function semanasFechas() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   const fechaConParametros = new Date()
   const numberOfMlSeconds = fechaConParametros.getTime();
-  const addMlSeconds = 60 * 800000;
+  const addMlSeconds = 60 * 1800000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
   const addMlSeconds2 = 60 * 8000000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
@@ -257,7 +257,7 @@ function screenshot() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   const fechaConParametros = new Date()
   const numberOfMlSeconds = fechaConParametros.getTime();
-  const addMlSeconds = 60 * 800000;
+  const addMlSeconds = 60 * 1800000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
   const addMlSeconds2 = 60 * 8000000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
