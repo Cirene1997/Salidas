@@ -239,7 +239,7 @@ function semanasFechas() {
   const numberOfMlSeconds = fechaConParametros.getTime();
   const addMlSeconds = 60 * 1800000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
-  const addMlSeconds2 = 60 * 8000000;
+  const addMlSeconds2 = 60 * 6000000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
   if (salidaFecha2 >= 1) {
     document.getElementById('semanas').innerHTML = `Semana ${salidaFecha.getDate()} de ${meses[salidaFecha.getMonth()]} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`
@@ -259,7 +259,7 @@ function screenshot() {
   const numberOfMlSeconds = fechaConParametros.getTime();
   const addMlSeconds = 60 * 1800000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
-  const addMlSeconds2 = 60 * 8000000;
+  const addMlSeconds2 = 60 * 6000000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
   if (salidaFecha2 >= 1) {
     document.getElementById('semanas').innerHTML = `Semana ${salidaFecha.getDate()} de ${meses[salidaFecha.getMonth()]} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`
