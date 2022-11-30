@@ -25,6 +25,10 @@ table {
   border-radius: 50%;
 
 }
+td{
+font-size:18px 
+}
+
 .semanas{
   border-bottom-left-radius: 10px;
   position: relative;
