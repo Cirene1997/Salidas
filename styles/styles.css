@@ -115,6 +115,8 @@ table {
 }
 
 .conteiner {
+  display: flex;
+  flex-direction: column;
   border-radius: 15px;
   top: 2px;
   position: absolute;
