@@ -321,15 +321,12 @@ form > input[type="button"]:hover {
     left: 5px;
     top: 15px;
   }
-  /* .horas11 {
-    background-color: var(--ligthblueFort);
-    color: var(--black);
-  } */
+ 
 
   .conteiner {
     border-radius: 15px;
     top: 2px;
-    /* position: absolute; */
+    position: fixed;
     text-align: center;
     border: solid 1px var(--blue);
     width: 650px;
