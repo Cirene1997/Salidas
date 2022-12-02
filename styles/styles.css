@@ -326,7 +326,6 @@ form > input[type="button"]:hover {
   .conteiner {
     border-radius: 15px;
     top: 2px;
-    position: fixed;
     text-align: center;
     border: solid 1px var(--blue);
     width: 650px;
