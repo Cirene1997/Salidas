@@ -304,6 +304,15 @@ form > input[type="button"]:hover {
     top: 10px;
     margin-bottom: 0px;
   }
+  
+    th{
+    display: row;
+    justify-content: space-around;
+    font-size: 15px;
+    width: 95px;
+    padding-right: 15px;
+  }
+  
   td {
     font-size: 15px;
     top: 10px;
