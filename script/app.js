@@ -232,15 +232,13 @@ function elegir2() {
 
 }
 
-
-
 function semanasFechas() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   const fechaConParametros = new Date()
   const numberOfMlSeconds = fechaConParametros.getTime();
-  const addMlSeconds = 60* 1000000;
+  const addMlSeconds = 60 * 1000000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
-  const addMlSeconds2 = 60* 1000000;
+  const addMlSeconds2 = 60 * 10000000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
   if (salidaFecha2 == 28) {
     document.getElementById('semanas').innerHTML = `Semana ${salidaFecha.getDate()} de ${meses[salidaFecha.getMonth()]} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`
@@ -258,11 +256,11 @@ function screenshot() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   const fechaConParametros = new Date()
   const numberOfMlSeconds = fechaConParametros.getTime();
-  const addMlSeconds = 60* 1000000;
+  const addMlSeconds = 60 * 1000000;
   const salidaFecha = new Date(numberOfMlSeconds + addMlSeconds);
-  const addMlSeconds2 = 60* 1000000;
+  const addMlSeconds2 = 60 * 10000000;
   const salidaFecha2 = new Date(numberOfMlSeconds + addMlSeconds2);
-  if (salidaFecha2 ==28 ) {
+  if (salidaFecha2 == 28) {
     document.getElementById('semanas').innerHTML = `Semana ${salidaFecha.getDate()} de ${meses[salidaFecha.getMonth()]} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`
   }
   else {
@@ -270,6 +268,8 @@ function screenshot() {
   }
   setTimeout(mostrarNotificacion, 60 * 10000000)
   setTimeout(semanasFechas, 60 * 10000000)
+
+
 
 
   const imprimir = document.querySelector('.tablaValor')
