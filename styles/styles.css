@@ -26,6 +26,10 @@ table {
 
 }
 
+td{
+  font-size:18px 
+  }
+
 
 .semanas{
   border-bottom-left-radius: 10px;
@@ -150,7 +154,7 @@ table {
   left: 8px;
   width: 95%;
   height: 95%;
-  font-size: 17px;
+  font-size: 20px;
   border: solid 5px var(--white);
 }
 
@@ -260,14 +264,13 @@ form > input[type="button"]:hover {
 
 .tituloTabla{
   position: relative;
-  width: 25%;
+  width: 100%;
   top: -1px;
   right: -190px;
-  font-size: 15px;
+  font-size:15px;
   color:var(--white);
   border-radius: 15px;
   background-color: var(--ligthblueFort);
-  /* border: red 5px solid; */
 }
 
 
