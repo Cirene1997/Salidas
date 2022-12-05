@@ -121,16 +121,15 @@ td {
   color: var(--black);
 }
 
-
 .conteiner {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  top: 2%;
+  top: 12%;
   position: absolute;
   text-align: center;
   border: solid 1px var(--blue);
-  width: 30%;
+  width: 25%;
   height: 480px;
   background-color: var(--blueviolet);
   left: 2%;
@@ -138,14 +137,15 @@ td {
 .conteiner2 {
   text-align: center;
   top: 2px;
-  right: 2%;
+  right: 1%;
   position: absolute;
   text-align: center;
   border: solid 1px var(--blue);
-  width: 65%;
+  width: 68%;
   height: auto;
   background-color: var(--blueviolet);
 }
+
 .valores {
   color: var(--white);
   position: absolute;
