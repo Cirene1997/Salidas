@@ -121,11 +121,6 @@ td {
   color: var(--black);
 }
 
-/* .asam {
-  border-radius: 15px;
-  background-color: var(--ligthblueFort);
-  color: var(--black);
-} */
 
 .conteiner {
   display: flex;
@@ -325,6 +320,8 @@ form > input[type="button"]:hover {
     top: 10px;
     margin-bottom: 0px;
     border-left: var(--white) solid 1px;
+    border-left: var(--ligthblueFort) solid 2px;
+
   }
 
   .active_day {
