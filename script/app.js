@@ -16,6 +16,12 @@ function terminarProceso() {
 
 
 
+
+
+
+
+
+
 const nextDay = document.getElementById('sigDia');
 const diasDeSemana = document.getElementById('dias');
 
@@ -40,14 +46,14 @@ nextDay.addEventListener('click', (e) => {
 
 hora.addEventListener('change', (e) => {
   e.preventDefault();
-    document.getElementById('hora').style.border = '1px solid black';
-    document.getElementById('hora').style.background = '#fff';
-    document.getElementById('hora').style.background = '#fff';
-    document.getElementById('errorDato').innerText = 'ok';
-    document.getElementById('errorDato').classList.add('okDato');
-    document.getElementById('errorDato').classList.add('okDatoMedia');
-  
-   
+  document.getElementById('hora').style.border = '1px solid black';
+  document.getElementById('hora').style.background = '#fff';
+  document.getElementById('hora').style.background = '#fff';
+  document.getElementById('errorDato').innerText = 'ok';
+  document.getElementById('errorDato').classList.add('okDato');
+  document.getElementById('errorDato').classList.add('okDatoMedia');
+
+
 })
 
 
@@ -167,7 +173,7 @@ function valorTerritorio() {
 
 
 function valorLugar() {
-  if (lugar.value == '')  {
+  if (lugar.value == '') {
     Swal.fire({
       title: ` Falto algun dato`,
       icon: 'question',
@@ -196,8 +202,8 @@ function valorLugar() {
 
 
 
-function notificacion(){
-  Notification.requestPermission().then(resultado=>{
+function notificacion() {
+  Notification.requestPermission().then(resultado => {
     console.log('Resultado :', resultado)
   })
 }
@@ -205,20 +211,23 @@ function notificacion(){
 notificacion()
 
 
-function mostrarNotificacion(nombre){
+function mostrarNotificacion(nombre) {
   nombre = 'Daniel'
-  if(Notification.permission === 'granted'){
-    const notifcaWeb = new Notification(`Salidas Alcorta`,{
+  if (Notification.permission === 'granted') {
+    const notifcaWeb = new Notification(`Salidas Alcorta`, {
       icon: '../img/terri.png',
       body: `${nombre}, como estas? solo queria comentarte que recuerdes las Salidas, si deseas haz click aqui para abrir la pagina`,
-     
+
     })
-    notifcaWeb.onclick = function(){
+    notifcaWeb.onclick = function () {
       window.open('https://xantino1997.github.io/Salidas/src/index.html')
     }
-}
+  }
 
 }
+
+
+
 
 
 
@@ -231,6 +240,8 @@ function elegir2() {
   })
 
 }
+
+
 
 function semanasFechas() {
   const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
@@ -266,10 +277,8 @@ function screenshot() {
   else {
     document.getElementById('semanas').innerHTML = `Semana ${salidaFecha.getDate()} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`
   }
-  setTimeout(mostrarNotificacion, 60 * 10000000)
-  setTimeout(semanasFechas, 60 * 10000000)
-
-
+  setTimeout(mostrarNotificacion, 60 * 9000000)
+  setTimeout(semanasFechas, 100)
 
 
   const imprimir = document.querySelector('.tablaValor')
@@ -283,7 +292,7 @@ function screenshot() {
       link.download = `Salidas.png`;
       // + ` ${salidaFecha.getDate()} al ${salidaFecha2.getDate()} de ${meses[salidaFecha2.getMonth()]}`;
     }
-    
+
   }
   );
 
@@ -496,6 +505,20 @@ function elegir() {
     // FIN VIERNES
 
     // INICIO SABADO
+    case 'Sabado-Publica':
+      let horaPublica = document.getElementById('hora').value
+      document.querySelector('.horas17').innerText = `${horaPublica} hs`;
+
+      let conductorR = document.getElementById('conductor').value
+      document.getElementById('conductores17').innerText = conductorR;
+
+      let lugar17 = document.getElementById('lugar').value
+      document.getElementById('lugares17').innerText = lugar17;
+      let terri17 = document.getElementById('territorio').value
+
+      document.getElementById('territorios17').innerText = terri17;
+      break;
+
     case 'Sabado':
       let horaViernesTardeB = document.getElementById('hora').value
       document.querySelector('.horas12').innerText = `${horaViernesTardeB} hs`;
@@ -556,6 +579,24 @@ function elegir() {
       break;
     // FIN SABADO
 
+    // INICIO DOMINGO
+
+    case 'Domingo':
+      let horaDomingo = document.getElementById('hora').value
+      document.querySelector('.horas18').innerText = `${horaDomingo} hs`;
+
+      let conductorS = document.getElementById('conductor').value
+      document.getElementById('conductores18').innerText = conductorS;
+
+      let lugar18 = document.getElementById('lugar').value
+      document.getElementById('lugares18').innerText = lugar18;
+      let terri18 = document.getElementById('territorio').value
+
+      document.getElementById('territorios18').innerText = terri18;
+      break;
+
+      // FIN DE DOMINGO
+
     default: Swal.fire({
       title: 'Algo fallo, escribe a soporte por favor',
       icon: 'warning',
@@ -564,21 +605,3 @@ function elegir() {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
