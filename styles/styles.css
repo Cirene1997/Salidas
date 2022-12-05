@@ -15,23 +15,25 @@
   --ligthblue: #aeeaf9;
   --ligthblueFort: #4c95ed;
   --ligthRed: #f3b2b2;
-  
 }
 table {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: var(--blueviolet);
-  border-radius: 50%;
-
+  border-radius: 15px;
 }
 
-td{
-  font-size:18px 
-  }
+td {
+  font-size: 18px;
+}
 
+th {
+  
+  padding-right: 15px;
+}
 
-.semanas{
+.semanas {
   border-bottom-left-radius: 10px;
   position: relative;
   padding-bottom: 0px;
@@ -39,18 +41,18 @@ td{
   height: 15px;
   background-color: #4c95ed;
 }
-.tituloTabla{
+.tituloTabla {
   position: relative;
   width: 38%;
   top: -1px;
   right: -290px;
   font-size: large;
-  color:var(--white);
+  color: var(--white);
   background-color: var(--ligthblueFort);
   border-radius: 15px;
 }
 
-.errorDato{
+.errorDato {
   color: var(--red);
   font-size: 30px;
   margin-left: 10px;
@@ -61,12 +63,12 @@ td{
   visibility: hidden;
 }
 
-.falla{
+.falla {
   font-size: 15px;
   color: var(--red);
 }
 
-.okDato{
+.okDato {
   color: var(--white);
   font-size: 30px;
   margin-left: 10px;
@@ -118,34 +120,38 @@ td{
   color: var(--black);
 }
 
+/* .asam {
+  border-radius: 15px;
+  background-color: var(--ligthblueFort);
+  color: var(--black);
+} */
+
 .conteiner {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  top: 2px;
+  top: 2%;
   position: absolute;
   text-align: center;
   border: solid 1px var(--blue);
-  width: 450px;
+  width: 30%;
   height: 480px;
   background-color: var(--blueviolet);
-  left: 40px;
+  left: 2%;
 }
 .conteiner2 {
   text-align: center;
-  border-radius: 15px;
   top: 2px;
-  right: 20px;
+  right: 2%;
   position: absolute;
   text-align: center;
   border: solid 1px var(--blue);
-  width: 1000px;
-  height: 700px;
+  width: 65%;
+  height: auto;
   background-color: var(--blueviolet);
 }
 .valores {
   color: var(--white);
-  border-radius: 15px;
   position: absolute;
   margin-top: 5px;
   display: flex;
@@ -160,7 +166,7 @@ td{
 
 .valores2 {
   color: var(--white);
-  border-radius: 15px;
+  /* border-radius: 15px; */
   position: absolute;
   margin-top: 5px;
   display: flex;
@@ -212,68 +218,62 @@ form > input[type="button"]:hover {
   font-size: 25px;
 }
 
-
 /* COMIENZO MEDIA QUERY */
 
 @media screen and (max-width: 980px) {
+  .errorDatoMedia {
+    color: var(--red);
+    font-size: 15px;
+    left: -2px;
+    width: 35px;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    position: absolute;
+    visibility: hidden;
+  }
+  .okDatoMedia {
+    color: var(--white);
+    right: 5px;
+    font-size: 15px;
+    left: -2px;
+    width: 35px;
+    border: 2px solid var(--ligthblueFort);
+    border-radius: 50%;
+    position: absolute;
+    visibility: visible;
+  }
 
+  .errorDato {
+    color: var(--red);
+    font-size: 15px;
+    margin-left: 5px;
+    width: 35px;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    position: absolute;
+    visibility: hidden;
+  }
+  .okDato {
+    color: var(--white);
+    font-size: 15px;
+    margin-left: 5px;
+    width: 35px;
+    border: 2px solid var(--ligthblueFort);
+    border-radius: 50%;
+    position: absolute;
+    visibility: visible;
+  }
 
-.errorDatoMedia{
-  color: var(--red);
-  font-size: 15px;
-  left:-2px;
-  width: 35px;
-  border: 2px solid var(--red);
-  border-radius: 50%;
-  position: absolute;
-  visibility: hidden;
-}
-.okDatoMedia{
-  color: var(--white);
-  right: 5px;
-  font-size: 15px;
-  left: -2px;
-  width: 35px;
-  border: 2px solid var(--ligthblueFort);
-  border-radius: 50%;
-  position: absolute;
-  visibility: visible;
-}
-
-
-.errorDato{
-  color: var(--red);
-  font-size: 15px;
-  margin-left: 5px;
-  width: 35px;
-  border: 2px solid var(--red);
-  border-radius: 50%;
-  position: absolute;
-  visibility: hidden;
-}
-.okDato{
-  color: var(--white);
-  font-size: 15px;
-  margin-left: 5px;
-  width: 35px;
-  border: 2px solid var(--ligthblueFort);
-  border-radius: 50%;
-  position: absolute;
-  visibility: visible;
-}
-
-.tituloTabla{
-  position: relative;
-  width: 100%;
-  top: -1px;
-  right: -190px;
-  font-size:15px;
-  color:var(--white);
-  border-radius: 15px;
-  background-color: var(--ligthblueFort);
-}
-
-
+  .tituloTabla {
+    position: relative;
+    width: 100%;
+    top: -1px;
+    right: -190px;
+    font-size: 15px;
+    color: var(--white);
+    border-radius: 15px;
+    background-color: var(--ligthblueFort);
+  }
 
   .conteiner2 .valores2 > h2 {
     font-size: 15px;
@@ -282,7 +282,7 @@ form > input[type="button"]:hover {
     font-size: 15px;
   }
 
-  .semanas{
+  .semanas {
     position: relative;
     padding-bottom: 0px;
     width: 40%;
@@ -304,15 +304,15 @@ form > input[type="button"]:hover {
     top: 10px;
     margin-bottom: 0px;
   }
-  
-    th{
+
+  th {
     display: row;
     justify-content: space-around;
     font-size: 15px;
     width: 95px;
     padding-right: 15px;
   }
-  
+
   td {
     font-size: 15px;
     top: 10px;
@@ -330,11 +330,15 @@ form > input[type="button"]:hover {
     left: 5px;
     top: 15px;
   }
- 
+  /* .horas11 {
+    background-color: var(--ligthblueFort);
+    color: var(--black);
+  } */
 
   .conteiner {
     border-radius: 15px;
     top: 2px;
+    /* position: absolute; */
     text-align: center;
     border: solid 1px var(--blue);
     width: 650px;
