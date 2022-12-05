@@ -316,12 +316,10 @@ form > input[type="button"]:hover {
   }
 
   td {
-    font-size: 15px;
+    font-size: 12px;
     top: 10px;
     margin-bottom: 0px;
-    border-left: var(--white) solid 1px;
     border-left: var(--ligthblueFort) solid 2px;
-
   }
 
   .active_day {
