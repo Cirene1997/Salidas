@@ -14,8 +14,8 @@
   --black: #000;
   --ligthblue: #aeeaf9;
   --ligthblueFort: #4c95ed;
-  --ligthRed: #f3b2b2;
-}
+  --ligthClearViolet: #c793f8;}
+  
 table {
   position: relative;
   width: 100%;
@@ -25,13 +25,25 @@ table {
 }
 
 td {
-  font-size: 18px;
+  font-size: 15px;
+  top: 10px;
+  margin-bottom: 0px;
+  border-left: var(--ligthblueFort) solid 2px;
 }
+
+/* .dias{
+  background-color: var(--ligthClearViolet);
+} */
+.domingo{
+  width: 95px;
+  height: 50px;
+}
+
 
 .header{
   padding-right: 45px;
   width: 100%;
-
+  border-left: var(--ligthblueFort) solid 2p;
 }
 
 .semanas {
@@ -49,8 +61,8 @@ td {
   right: -320px;
   font-size: large;
   color: var(--white);
-  background-color: var(--ligthblueFort);
   border-radius: 15px;
+  background-color: var(--ligthblueFort);
 }
 
 .errorDato {
@@ -93,6 +105,7 @@ td {
   display: row;
   font-size: x-large;
   justify-content: space-around;
+  background: var(--red);
 }
 .tablas {
   position: relative;
@@ -121,6 +134,12 @@ td {
   color: var(--black);
 }
 
+/* .asam {
+  border-radius: 15px;
+  background-color: var(--ligthblueFort);
+  color: var(--black);
+} */
+
 .conteiner {
   display: flex;
   flex-direction: column;
@@ -129,7 +148,7 @@ td {
   position: absolute;
   text-align: center;
   border: solid 1px var(--blue);
-  width: 25%;
+  width: 27%;
   height: 480px;
   background-color: var(--blueviolet);
   left: 2%;
@@ -145,7 +164,6 @@ td {
   height: auto;
   background-color: var(--blueviolet);
 }
-
 .valores {
   color: var(--white);
   position: absolute;
@@ -231,8 +249,10 @@ form > input[type="button"]:hover {
   .header{
     padding-right: 25px;
     width: 100%;
-    
   }
+
+
+
   .okDatoMedia {
     color: var(--white);
     right: 5px;
