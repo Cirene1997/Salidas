@@ -35,14 +35,14 @@
                     <!-- <option type="checkbox" value="Martes-tarde"></option> -->
                     <option type="checkbox" value="Martes-tarde2">REUNION</option>
                     <option type="checkbox" value="Miercoles">MIERCOLES</option>
-                    <option type="checkbox" value="Miercoles-tarde">MIERCOLES-TARDE</option>
-                    <option type="checkbox" value="Miercoles-tarde2">MIERCOLES-TARDE2</option>
+                    <option type="checkbox" value="Miercoles-tarde">MIERCOLES-CARRERAS</option>
+                    <option type="checkbox" value="Miercoles-tarde2">MIERCOLES-ALCORTA</option>
                     <option type="checkbox" value="Jueves">JUEVES</option>
-                    <option type="checkbox" value="Jueves-tarde">JUEVES-TARDE</option>
-                    <option type="checkbox" value="Jueves-tarde2">JUEVES-TARDE2</option>
+                    <option type="checkbox" value="Jueves-tarde">JUEVES-CARRERAS</option>
+                    <option type="checkbox" value="Jueves-tarde2">JUEVES-ALCORTA</option>
                     <option type="checkbox" value="Viernes">VIERNES</option>
-                    <option type="checkbox" value="Viernes-Tarde">VIERNES-TARDE</option>
-                    <option type="checkbox" value="Viernes-Tarde2">VIERNES-TARDE2</option>
+                    <option type="checkbox" value="Viernes-Tarde">VIERNES-CARRERAS</option>
+                    <option type="checkbox" value="Viernes-Tarde2">VIERNES-ALCORTA</option>
                     <option type="checkbox" value="Sabado-Publica">SABADO-PUBLICA</option>
                     <option type="checkbox" value="Sabado">SABADO</option>
                     <option type="checkbox" value="Sabado-mañana">SABADO-MAÑANA</option>
@@ -61,7 +61,7 @@
     <div class="conteiner2">
         <div class="valores2" id="valores">
 
-             <table class="tablaValor" id="tablaValor">
+            <table class="tablaValor" id="tablaValor">
                 <th class=" tituloTabla" id="semanas"></th>
                
                 <tr style="border-bottom: 15px solid transparent ;">
@@ -73,18 +73,18 @@
                     <th class="header">Territorio</th>
                 </tr>
 
-                <tr  style="border-bottom: 3px solid blueviolet ;">
-                    <th id="lunes">LUNES</th>
-                    <td class="horas"></td>
+                <tr  style="border-bottom: 3px solid white ;">
+                    <th id="lunes" class="dias">LUNES</th>
+                    <td class="horas" aria-autocomplete=""></td>
                     <td id="diaTarde">Tarde</td>
-                    <td id="conductores"></td>
-                    <td id="lugares"></td>
-                    <td id="territorios"></td>
+                    <td id="conductores" autocomplete></td>
+                    <td id="lugares" autocomplete></td>
+                    <td id="territorios" autocomplete></td>
 
                 </tr>
 
                 <tr style="border-bottom: 3px solid transparent ;">
-                    <th id="Martes">MARTES</th>
+                    <th id="Martes" class="dias">MARTES</th>
                     <td class="horas1" class="lugar"></td>
                     <td id="diaTarde1" class="lugar">Mañana</td>
                     <td id="conductoresA" class="lugar"></td>
@@ -107,15 +107,15 @@
                     <td class="horas2" id="lugares3"></td>
                     <td class="horas2" id="territorios3"><b>ALCORTA</b></td>
                 </tr>
-                <tr style="border-bottom: 3px solid blueviolet ;">
-                    <th id="Miercoles">MIERCOLES</th>
+                <tr style="border-bottom: 3px solid white ;">
+                    <th id="Miercoles" class="dias">MIERCOLES</th>
                     <td class="horas4"></td>
                     <td id="diaTarde4">Mañana</td>
                     <td id="conductores4"></td>
                     <td id="lugares4" class="lugar"></td>
                     <td id="territorios4" class="lugar"></td>
                 </tr>
-                <tr  style="border-bottom: 3px solid blueviolet ;">
+                <tr  style="border-bottom: 3px solid white ;">
                     <th style="visibility: hidden ">MIERCOLES-TARDE</th>
                     <td class="horas5"></td>
                     <td id="diaTarde5">Tarde</td>
@@ -123,7 +123,7 @@
                     <td id="lugares5" class="lugar"></td>
                     <td id="territorios5" class="lugar"></td>
                 </tr>
-                <tr  style="border-bottom: 3px solid blueviolet ;">
+                <tr  style="border-bottom: 3px solid white ;">
                     <th style="visibility: hidden ">MIERCOLES-TARDE-2</th>
                     <td class="horas6"></td>
                     <td id="diaTarde6">Tarde</td>
@@ -131,15 +131,15 @@
                     <td id="lugares6" class="lugar"></td>
                     <td id="territorios6" class="lugar"></td>
                 </tr>
-                <tr style="border-bottom: 3px solid blueviolet ;">
-                    <th id="Jueves">JUEVES</th>
+                <tr style="border-bottom: 3px solid white ;">
+                    <th id="Jueves" class="dias">JUEVES</th>
                     <td class="horas7"></td>
                     <td id="diaTarde7">Mañana</td>
                     <td id="conductores7"></td>
                     <td id="lugares7" class="lugar"></td>
                     <td id="territorios7" class="lugar"></td>
                 </tr>
-                <tr  style="border-bottom: 3px solid blueviolet ;">
+                <tr  style="border-bottom: 3px solid white ;">
                     <th style="visibility: hidden ">JUEVES-TARDE</th>
                     <td class="horas8"></td>
                     <td id="diaTarde8">Tarde</td>
@@ -147,7 +147,7 @@
                     <td id="lugares8" class="lugar"></td>
                     <td id="territorios8" class="lugar"></td>
                 </tr>
-                <tr  style="border-bottom: 3px solid blueviolet ;">
+                <tr  style="border-bottom: 3px solid white ;">
                     <th style="visibility: hidden ">JUEVES-TARDE-2</th>
                     <td class="horas9"></td>
                     <td id="diaTarde9">Tarde</td>
@@ -155,15 +155,15 @@
                     <td id="lugares9" class="lugar"></td>
                     <td id="territorios9" class="lugar"></td>
                 </tr>
-                <tr  style="border-bottom: 3px solid blueviolet ;">
-                    <th id="Viernes">VIERNES</th>
+                <tr  style="border-bottom: 3px solid white ;">
+                    <th id="Viernes" class="dias">VIERNES</th>
                     <td class="horas10"></td>
                     <td id="diaTarde10">Mañana</td>
                     <td id="conductores10"></td>
                     <td id="lugares10" class="lugar"></td>
                     <td id="territorios10" class="lugar"></td>
                 </tr>
-                <tr  style="border-bottom: 3px solid blueviolet ;">
+                <tr  style="border-bottom: 3px solid whitewhite ;">
                     <th  style="visibility: visible "></th>
                     <td class="horas11"></td>
                     <td id="diaTarde11">Tarde</td>
@@ -171,7 +171,7 @@
                     <td  id="lugares11" class="lugar"></td>
                     <td id="territorios11" class="lugar"></td>
                 </tr>
-                <tr  style="border-bottom: 3px solid blueviolet ;">
+                <tr  style="border-bottom: 3px solid whitewhite ;">
                     <th  style="visibility: hidden "></th>
                     <td class="horas16"></td>
                     <td  id="diaTarde16">Tarde</td>
@@ -182,8 +182,8 @@
 <!-- FIN VIERNES -->
                 
 <!-- INICIO SABADO -->
-                <tr id="Publica"  style="border-bottom: 3px solid blueviolet ;">
-                    <th>SABADO</th>
+                <tr id="Publica"  style="border-bottom: 3px solid whitewhite ;">
+                    <th class="dias">SABADO</th>
                     <td class="horas17"></td>
                     <td id="diaTarde17">Mañana</td>
                     <td id="conductores17"></td>
@@ -192,7 +192,7 @@
                 </tr>
 
 
-                <tr id="Sabado"  style="border-bottom: 3px solid blueviolet ;">
+                <tr id="Sabado"  style="border-bottom: 3px solid whitewhite ;">
                     <th  style="visibility: hidden">SABADO</th>
                     <td class="horas12"></td>
                     <td id="diaTarde12">Mañana</td>
@@ -203,7 +203,7 @@
 
 
 
-                <tr  style="border-bottom: 3px solid blueviolet ;">
+                <tr  style="border-bottom: 3px solid white ;">
                     <th style="visibility: hidden ">SABADO-MAÑANA2</th>
                     <td class="horas13"></td>
                     <td id="diaTarde13">Mañana</td>
@@ -212,7 +212,7 @@
                     <td id="territorios13" class="lugar"></td>
                 </tr>
 
-                <tr  style="border-bottom: 3px solid blueviolet ;">
+                <tr  style="border-bottom: 3px solid white ;">
                     <th style="visibility: hidden ">SABADO-TARDE</th>
                     <td class="horas14"></td>
                     <td id="diaTarde14">Tarde</td>
@@ -220,7 +220,7 @@
                     <td id="lugares14" class="lugar"></td>
                     <td id="territorios14"  class="lugar"></td>
                 </tr>
-                <tr  style="border-bottom: 3px solid blueviolet ;">
+                <tr  style="border-bottom: 3px solid white ;">
                     <th style="visibility: hidden ">SABADO-TARDE-2</th>
                     <td class="horas15"></td>
                     <td id="diaTarde15">Tarde</td>
@@ -228,7 +228,7 @@
                     <td id="lugares15" class="lugar"></td>
                     <td id="territorios15" class="lugar"></td>
                 </tr>
-                <tr  style="border-bottom: 3px solid blueviolet ;">
+                <tr  style="border-bottom: 3px solid white ;">
                     <th style="visibility: visible " class="domingo">DOMINGO</th>
                     <td class="horas18"></td>
                     <td id="diaTarde18">Mañana</td>
@@ -238,6 +238,7 @@
                 </tr>
                 <td class="semanas"  id="titulo" ><b>Predicacion Alcorta</b></td>
             </table>
+           
 
         </div>
     </div>
