@@ -31,13 +31,13 @@ td {
   border-left: var(--ligthblueFort) solid 2px;
 }
 
-/* .dias{
-  background-color: var(--ligthClearViolet);
-} */
+
 .domingo{
+  margin-bottom: 0px;
   width: 95px;
-  height: 50px;
+  height: 30px;
 }
+
 
 
 .header{
@@ -49,7 +49,7 @@ td {
 .semanas {
   border-bottom-left-radius: 10px;
   position: relative;
-  padding-bottom: 0px;
+  top: 0px;
   width: 40%;
   height: 15px;
   background-color: #4c95ed;
