@@ -383,9 +383,9 @@ function elegir() {
       document.getElementById('territorios4').innerText = terri4;
       break;
 
-    case 'Miercoles-tarde':
+   case 'Miercoles-tarde':
       let horaMiercolesTarde = document.getElementById('hora').value
-      document.querySelector('.horas5').innerText = `${horaMiercolesTarde} hs`;
+      document.querySelector('.horas5').innerText = `CARRERAS ${horaMiercolesTarde} hs`;
 
       let conductorE = document.getElementById('conductor').value
       document.getElementById('conductores5').innerText = conductorE;
@@ -398,7 +398,7 @@ function elegir() {
       break;
     case 'Miercoles-tarde2':
       let horaMiercolesTardeB = document.getElementById('hora').value
-      document.querySelector('.horas6').innerText = `${horaMiercolesTardeB} hs`;
+      document.querySelector('.horas6').innerText = `ALCORTA ${horaMiercolesTardeB} hs`;
 
       let conductorF = document.getElementById('conductor').value
       document.getElementById('conductores6').innerText = conductorF;
@@ -429,7 +429,7 @@ function elegir() {
 
     case 'Jueves-tarde':
       let horaJuevesTarde = document.getElementById('hora').value
-      document.querySelector('.horas8').innerText = `${horaJuevesTarde} hs`;
+      document.querySelector('.horas8').innerText = `CARRERAS ${horaJuevesTarde} hs`;
 
       let conductorH = document.getElementById('conductor').value
       document.getElementById('conductores8').innerText = conductorH;
@@ -443,7 +443,7 @@ function elegir() {
 
     case 'Jueves-tarde2':
       let horaJuevesTardeB = document.getElementById('hora').value
-      document.querySelector('.horas9').innerText = `${horaJuevesTardeB} hs`;
+      document.querySelector('.horas9').innerText = `ALCORTA ${horaJuevesTardeB} hs`;
 
       let conductorI = document.getElementById('conductor').value
       document.getElementById('conductores9').innerText = conductorI;
@@ -474,7 +474,7 @@ function elegir() {
 
     case 'Viernes-Tarde':
       let horaViernesTarde = document.getElementById('hora').value
-      document.querySelector('.horas11').innerText = `${horaViernesTarde} hs`;
+      document.querySelector('.horas11').innerText = `CARRERAS ${horaViernesTarde} hs`;
 
       let conductork = document.getElementById('conductor').value
       document.getElementById('conductores11').innerText = conductork;
@@ -488,7 +488,7 @@ function elegir() {
 
     case 'Viernes-Tarde2':
       let horaViernesTarde2 = document.getElementById('hora').value
-      document.querySelector('.horas16').innerText = `${horaViernesTarde2} hs`;
+      document.querySelector('.horas16').innerText = `ALCORTA ${horaViernesTarde2} hs`;
 
       let conductorQ = document.getElementById('conductor').value
       document.getElementById('conductores16').innerText = conductorQ;
@@ -499,9 +499,6 @@ function elegir() {
 
       document.getElementById('territorios16').innerText = terri16;
       break;
-
-
-
     // FIN VIERNES
 
     // INICIO SABADO
