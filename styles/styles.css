@@ -14,8 +14,9 @@
   --black: #000;
   --ligthblue: #aeeaf9;
   --ligthblueFort: #4c95ed;
-  --ligthClearViolet: #c793f8;}
-  
+  --ligthClearViolet: #c793f8;
+}
+
 table {
   position: relative;
   width: 100%;
@@ -26,23 +27,21 @@ table {
 
 td {
   font-size: 15px;
-  top: 10px;
+  top: 5px;
   margin-bottom: 0px;
   border-left: var(--ligthblueFort) solid 2px;
 }
 
-
-.domingo{
+.domingo {
+  margin-bottom: 0px;
   width: 95px;
   height: 30px;
 }
 
-
-
-.header{
+.header {
   padding-right: 45px;
   width: 100%;
-  border-left: var(--ligthblueFort) solid 2p;
+  border-left: var(--ligthblueFort) solid 2px;
 }
 
 .semanas {
@@ -245,12 +244,10 @@ form > input[type="button"]:hover {
     visibility: hidden;
   }
 
-  .header{
+  .header {
     padding-right: 25px;
     width: 100%;
   }
-
-
 
   .okDatoMedia {
     color: var(--white);
@@ -289,8 +286,8 @@ form > input[type="button"]:hover {
     position: relative;
     width: 100%;
     top: 3px;
-    right: -220px;
-    font-size: 12px;
+    right: -270px;
+    font-size: 11px;
     color: var(--white);
     border-radius: 15px;
     background-color: var(--ligthblueFort);
@@ -320,22 +317,21 @@ form > input[type="button"]:hover {
   }
 
   tr {
+    font-size: 15px;
     left: 0px;
-    font-size: 18px;
     top: 10px;
     margin-bottom: 0px;
+    margin-left: 5px;
   }
 
   th {
-    display: row;
-    justify-content: space-around;
-    font-size: 15px;
-    width: 95px;
-    padding-right: 15px;
+    display: row;  
+   font-size: 20px;
   }
+  
 
   td {
-    font-size: 12px;
+    font-size: 13px;
     top: 10px;
     margin-bottom: 0px;
     border-left: var(--ligthblueFort) solid 2px;
